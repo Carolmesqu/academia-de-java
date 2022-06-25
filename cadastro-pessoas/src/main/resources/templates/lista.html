@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Pessoa inserida com sucesso!</h1>
+	<h1>Lista de Pessoas</h1>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>E-mail</th>
+					<th>Fone</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+			<tr th:each="listaPessoa : ${listaPessoa}">
+			<td th:text = "${listaPessoa.id}">
+			<td th:text = "${listaPessoa.nome}">
+			<td th:text = "${listaPessoa.email}">
+			<td th:text = "${listaPessoa.fone}">
+			</td>
+			</tr>
+			</tbody>
+		</table>
+	
+	<a href = "/cadastro">Adicionar nova Pessoa</a>
+</body>
+</html>
