@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Listar Usuário</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Listar Usuário</h1>
+	<table>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+		<th>Senha</th>
+		<th>User</th>
+      </tr>
+      <tr th:each="p : ${usuarios}">
+        <td th:number="${p.id}"></td>
+		<td th:text="${p.email}"></td>
+        <td th:text="${p.senha}"></td>
+		<td th:text="${p.role}"></td>
+			<td>
+			<a th:href="@{/usuario/alterar/{id}(id=${p.id})}">Editar</a>
+			<a th:href="@{/usuario/excluir/{id}(id=${p.id})}" > Excluir</a>			
+		</td>
+      </tr>
+    </table>
+    <a href="/usuario/cadastrar">Cadastrar novo produto</a>
+</body>
+</html>

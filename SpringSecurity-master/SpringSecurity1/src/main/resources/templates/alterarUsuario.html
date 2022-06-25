@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Formulário de Alteração de Usuário</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Alterar Usuário</h1>
+    <form action="#" th:action="@{/usuarios/alterar}" th:object="${usuario}" method="post">
+		<p>Id: <input type="number" th:field="*{id}" readonly /></p>
+        <p>Email: <input type="text" th:field="*{email}" /></p>
+		<p>Senha: <input type="text" th:field="*{senha}" /></p>
+		<p>User: <input type="text" th:field="*{role}" readonly /></p>
+        <p><input type="submit" value="Alterar" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
