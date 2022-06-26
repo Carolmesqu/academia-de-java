@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Novo</title>
+<link rel="icon" href="imagens/coração.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box3">
+		<h1>Novo Produto:</h1>
+		<form name="frmNovo" action="insert">
+			<table>
+				<tr>
+					<td>Código</td>
+					<td><input type="number" name="codigo"
+						placeholder="0000000000" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td>Nome</td>
+					<td><input type="text" name="nome" placeholder="Nome"
+						class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td>Categoria</td>
+					<td><input type="text" name="categoria"
+						placeholder="Categoria" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td>Valor</td>
+					<td><input type="number" name="valor" placeholder="Valor"
+						class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td>Quantidade</td>
+					<td><input type="number" name="quantidade"
+						placeholder="Quantidade" class="Caixa1"></td>
+				</tr>
+			</table>
+			<br> <input type="button" value="Adicionar" class="Botao1"
+				onclick="validar()"> <a href="index.html" class="Botao1">Voltar</a>
+			<script>
+				function funcao() {
+					alert("É obrigatório informar valor para os campos: \n ✩ Código (Número inteiro) \n✩ Nome \n ✩ Valor (Número inteiro ou decimal) \n ✩ Quantidade(Número inteiro).")
+				}
+			</script>
+			<input type="button" onclick="funcao()" value="Informações"
+				class="Botao1" />
+
+		</form>
+		<script src="scripts/validador.js"></script>
+	</div>
+</body>
+<footer>Academia Java Atos ©2022</footer>
+</html>
