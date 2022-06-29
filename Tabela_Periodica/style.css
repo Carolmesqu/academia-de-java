@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Patrick+Hand&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*  {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  min-height: 100%;
+  background-image: url("imagens/2206.jpg");
+	background-size: cover;
+
+}
+
+h1 {
+  color: #000000;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #000000;
+  font-size: 60px;
+}
+
+th {
+
+  
+}
+
+.td1 {
+  border: none;
+}
+
+table {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+
+}
+
+table{
+
+
+}
+
+td {
+   text-align: center;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+ padding: 5px;
+}
+
+td:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*CORES DE FUNDO*/
+.nao_metais {
+  background-color: #a1d344;
+}
+
+.gases_nobres {
+  background-color: #3d9ee3;
+}
+
+.metais_alcalinos {
+  background-color: #f1b200;
+}
+
+.metais_alcalino-terrosos {
+  background-color: #eada00;
+}
+
+.semimetais {
+  background-color: #4db6ac;
+}
+
+.halogenios {
+  background-color: #70cbeb;
+}
+
+.outros_metais {
+  background-color: #a2c7d3;
+}
+
+.metais_de_transicao {
+  background-color: #eb8e8e;
+}
+
+.Lantanideos {
+  background-color: #90e3e9;
+}
+
+.Actinidios {
+  background-color: #dcadd6;
+}
+
+.td2 {
+  position: relative; /* Para que a imagem não saia fora do link */
+  display: block;
+  padding: 5px;
+  border: 1px #ddd;
+  text-decoration: none;
+ 
+}
+.td2:hover {
+  
+}
+.td2 span {
+  display: none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+}
+.td2:hover span {
+  display: block; /* Tranforma o SPAN em um elemento do tipo bloco */
+  position: absolute; /* Para você poder posicionar a vontade, sem quebrar o layour em volta */
+  top: 0px; /* Para ficar na mesma altura do link */
+  left: 100%; /* Empurra a imagem para fora do link, ficando a lado do mesmo */
+  
+}
+
+.container {
+ 
+  }
+  
+.box {
+}
+ 
+
+footer {
+  font-family: "Nuosu SIL", serif;
+  color: black;
+  text-align: center;
+  line-height: 100px;
+}
